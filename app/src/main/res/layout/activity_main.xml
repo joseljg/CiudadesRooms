@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_nuevaCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:onClick="nuevaCiudad"
+        android:text="@string/nueva_ciudad"
+        app:layout_constraintEnd_toEndOf="@+id/bt_nuevaProvincia"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_nuevaProvincia"
+        app:layout_constraintTop_toBottomOf="@+id/bt_nuevaProvincia" />
+
+    <Button
+        android:id="@+id/bt_nuevaProvincia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/nueva_provincia"
+        android:onClick="nuevaProvincia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_borrarProvincia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="borrarProvincia"
+        android:text="@string/borrar_provincia"
+        app:layout_constraintEnd_toEndOf="@+id/bt_actualizarProvincia"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_actualizarProvincia"
+        app:layout_constraintTop_toBottomOf="@+id/bt_actualizarProvincia" />
+
+    <Button
+        android:id="@+id/bt_actualizarProvincia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:onClick="actualizarProvincia"
+        android:text="@string/actualizar_provincia"
+        app:layout_constraintStart_toStartOf="@+id/bt_nuevaCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/bt_nuevaCiudad" />
+
+    <Button
+        android:id="@+id/bt_mostrarCiudades"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="mostrarCiudad"
+        android:text="@string/mostrar_ciudades"
+        app:layout_constraintEnd_toEndOf="@+id/bt_borrarProvincia"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_borrarProvincia"
+        app:layout_constraintTop_toBottomOf="@+id/bt_borrarProvincia" />
+</androidx.constraintlayout.widget.ConstraintLayout>
